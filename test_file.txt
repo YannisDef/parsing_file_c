@@ -1,0 +1,6 @@
+This is a test file
+with-differentes-values
+5;0
+15;5
+150;10
+1500;15
