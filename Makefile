@@ -21,7 +21,7 @@ SRC		=	src/close_file.c				\
 			src/replace_char_in_array.c		\
 			src/replace_char_in_str.c		\
 			src/is_char_delim.c				\
-			src/count_nb_word.c				\
+			src/count_nb_delim.c			\
 			src/get_size_word.c				\
 			src/get_word.c					\
 

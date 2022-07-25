@@ -10,7 +10,7 @@
 #include "parsing_file.h"
 #include "value.h"
 
-int count_nb_word(char const *str, char const *delim)
+int count_nb_delim(char const *str, char const *delim)
 {
     int nb_word = 0;
     bool c = false;

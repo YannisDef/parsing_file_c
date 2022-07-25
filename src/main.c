@@ -32,12 +32,13 @@ int main(int ac, char const * const *av)
     printf("str_from_path = [%s]\n", str_from_path);
     STEP();
 
-    char **array_from_path = get_array_from_path("test_file.txt", "\n;");
+    char **array_from_path = NULL;
+    int r_value = get_array_from_path("test_file.txt", "\n", &array_from_path);
     STEP();
 
+    printf("r_value array = %d\n", r_value);
     for (int i = 0; array_from_path[i] != NULL; ++i) {
-        printf("array[%d] |%s|\n", i, array_from_path[i]);
-        free(array_from_path[i]);
+        printf("array_from_path[%d] |%s|\n", i, array_from_path[i]);
     }
     return 0;
 }

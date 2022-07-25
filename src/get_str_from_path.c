@@ -11,6 +11,8 @@
 #include "parsing_file.h"
 #include "value.h"
 
+//TODO A changer en return INT
+
 char *get_str_from_path(char const *path)
 {
     char *buffer = NULL;

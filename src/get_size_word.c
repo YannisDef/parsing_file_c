@@ -14,6 +14,9 @@ size_t get_size_word(char const *str, char const *delim)
 {
     size_t size = 0;
 
+    if (str == NULL) {
+        return -1;
+    }
     while (str[size] != END_STR && !is_char_delim(str[size], delim)) {
         ++size;
     }
