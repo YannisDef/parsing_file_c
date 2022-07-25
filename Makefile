@@ -1,14 +1,12 @@
 ##
-## EPITECH PROJECT, 2020
-## Makefile
-## File description:
-## classic Makefile with with unit tests
+##
+## STD::VECTOR IN C
+## Rigolo2015, Yannis, 2022
+## 
 ##
 
 CC	=	gcc
 
-
-##?				NORMAL TESTS
 MAIN	=	src/main.c	\
 
 SRC		=	src/close_file.c				\
@@ -64,12 +62,13 @@ tests_clean:
 	$(RM) $(OBJ_TEST)
 	$(RM) $(GCDA)
 	$(RM) $(GCNO)
+	$(RM) vgcore.*
 
 clean:
 	$(RM) $(OBJ)
 	$(RM) $(OBJ_TEST)
 
-fclean:	clean
+fclean:	clean tests_clean
 	$(RM) $(NAME)
 	$(RM) $(TEST_NAME)
 

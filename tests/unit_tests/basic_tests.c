@@ -1,12 +1,11 @@
 /*
-** EPITECH PROJECT, 2021
-** B-CPE-200-PAR-2-1-matchstick-yannis.defontaine
-** File description:
-** test_ia_brain
+**
+** STD::VECTOR IN C
+** Rigolo2015, Yannis, 2022
+** 
 */
 
 #include <criterion/criterion.h>
-#include "project.h"
 #include "value.h"
 
 Test(project, function_test)
